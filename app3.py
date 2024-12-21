@@ -1,9 +1,9 @@
 import streamlit as st
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from youtube_transcript_api import YouTubeTranscriptApi
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
-load_dotenv()  # Loads all the environment variables
+# load_dotenv()  # Loads all the environment variables
 
 # Function to get the transcript data from YouTube videos
 def extract_transcript_section(youtube_video_url, start_time, end_time):
